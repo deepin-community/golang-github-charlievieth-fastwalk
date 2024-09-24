@@ -1,0 +1,15 @@
+Description: Fix tests on 32-bit
+Author: Nilesh Patra <nilesh@debian.org>
+Forwarded: https://github.com/charlievieth/fastwalk/pull/32
+Last-Update: 2024-08-31
+--- a/fastwalk_test.go
++++ b/fastwalk_test.go
+@@ -959,7 +959,7 @@
+ 		{fastwalk.SortDirsFirst, "DirsFirst"},
+ 		{fastwalk.SortFilesFirst, "FilesFirst"},
+ 		{100, "SortMode(100)"},
+-		{math.MaxUint32, fmt.Sprintf("SortMode(%d)", math.MaxUint32)},
++		{math.MaxUint32, fmt.Sprintf("SortMode(%d)", uint32(math.MaxUint32))},
+ 	}
+ 	for _, test := range tests {
+ 		got := test.mode.String()
