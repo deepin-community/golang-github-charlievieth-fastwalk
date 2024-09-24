@@ -1,5 +1,18 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-charlievieth-fastwalk (1.0.8-3) unstable; urgency=medium
 
-  * Initial release
+  * Team Upload.
+  * Add patch to fixup tests on 32-bit
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Nilesh Patra <nilesh@debian.org>  Sat, 31 Aug 2024 10:46:38 +0530
+
+golang-github-charlievieth-fastwalk (1.0.8-2) unstable; urgency=medium
+
+  * Source-only upload for testing migration
+
+ -- Vincent Blut <vincent.debian@free.fr>  Fri, 30 Aug 2024 22:11:18 +0200
+
+golang-github-charlievieth-fastwalk (1.0.8-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1073282)
+
+ -- Vincent Blut <vincent.debian@free.fr>  Sat, 24 Aug 2024 20:59:55 +0530
